@@ -1,0 +1,32 @@
+{
+  
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "name": "feed enhancer",
+  "description": "Youtube feed enhancer",
+  "permissions": ["tabs", "activeTab", "scripting",
+  "webNavigation"],
+  "icons": {
+    "48": "images/extension_48.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "*://www.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["contentscript.js"]
+    }
+  ]
+,
+  "author": "jagadeesh"
+}
