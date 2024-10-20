@@ -1,0 +1,77 @@
+.optionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 360px;
+  max-width: 360px;
+  /* max-height: 50px; */
+  /* height: 100px; */
+  padding: 0 10px;
+
+  box-sizing: border-box;
+  cursor: default;
+}
+.optionContainer:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.optionWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  border-bottom: none;
+  width: 100%;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50px;
+}
+.icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(94, 94, 94);
+  border-radius: 8px;
+}
+
+p {
+  margin: 0;
+  font-size: 12px;
+}
+.buttonContainer {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px 0;
+  margin-left: 5px;
+}
+
+.optionTitle p {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+.optionDescription p {
+  font-size: 10px;
+  font-weight: 400;
+  text-indent: 5px;
+  margin-top: 2px;
+  color: rgb(177, 177, 177);
+  font-family: sans-serif;
+  font-style: italic;
+}

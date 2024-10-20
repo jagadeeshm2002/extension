@@ -1,0 +1,92 @@
+.TopicContainer {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  align-items: start;
+  width: 360px;
+  max-width: 360px;
+  padding-bottom: 10px;
+
+  box-sizing: border-box;
+  border-bottom: 2px solid rgba(142, 142, 142, 0.512);
+  
+}
+.TopicTitle {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.TopicText {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+.TopicList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+.TopicItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  padding: 0 8px;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.05s ease-in-out;
+}
+.TopicItem:hover {
+  background-color: rgba(142, 142, 142, 0.512);
+}
+.TopicItem label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.TopicCheckbox {
+  padding: 0;
+  width: 20px;
+}
+input[type="checkbox" i] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  margin-right: 3px;
+}
+.TopicButton {
+  width: 360px;
+  padding: 0 10px;
+}
+.TopicButton .TopicAddButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: #381FFf;
+  border-bottom: none;
+  transition: all 0.05s ease-in-out;
+}
+.TopicButton .TopicAddButton:hover {
+  
+  background-color: #513aff;
+  
+}

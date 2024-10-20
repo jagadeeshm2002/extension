@@ -15,7 +15,6 @@
 .switch:hover {
   outline: 3px solid #2195f336;
   border-radius: 20px;
-  
 }
 
 .switch input {
@@ -42,8 +41,7 @@
   height: 12px;
   width: 12px;
   left: 2px;
-  bottom: 2px;
- 
+  bottom: 1.5px;
 
   background-color: white;
   -webkit-transition: 0.4s;
@@ -72,4 +70,3 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-

@@ -1,6 +1,9 @@
 import React from "react";
 import Button from "./components/Button";
 import "./main.css";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./components/Home/Home";
+import SearchPage from "./components/search";
 
 export default function Main() {
   return (
@@ -29,7 +32,12 @@ export default function Main() {
           </div>
         </div>
       </header>
-      <main>jagadeesh</main>
+      
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route path="/search" element={<SearchPage />} />
+
+      </Routes>
       <footer className="footer">
         <div className="footerContainer">
           <p>

@@ -12,11 +12,11 @@ body {
   min-width: 320px;
   width: 360px;
   font-size: 1.8rem;
-  line-height: 1.618;
+  line-height: normal;
   max-width: 380px;
   margin: auto;
-  color: #c9c9c9;
-  background-color: #0a0c10;
+  color: white;
+  background-color: #282828;
 }
 #root {
   width: 360px;
