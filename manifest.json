@@ -5,7 +5,7 @@
   "name": "feed enhancer",
   "description": "Youtube feed enhancer",
   "permissions": ["tabs", "activeTab", "scripting",
-  "webNavigation"],
+  "webNavigation","storage"],
   "icons": {
     "48": "images/extension_48.png"
   },
@@ -23,8 +23,12 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://www.youtube.com/*"],
+      "matches": ["*://*.youtube.com/*"],
       "js": ["contentscript.js"]
+
+    },{
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["contentscript2.js"]
     }
   ]
 ,

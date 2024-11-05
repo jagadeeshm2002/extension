@@ -47,25 +47,32 @@
   margin-bottom: 5px;
 }
 .Input {
-  height: 50px;
-  max-width: 340px;
-  max-height: 60px;
-  min-height: 40px;
   width: 100%;
-  min-width: 340px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.512);
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.822);
   font-size: 14px;
-  padding-left: 5px;
+  padding: 10px 5px;
+  padding-right: 10px;
   box-sizing: border-box;
 }
 .Input:focus {
   outline: 2px solid rgba(255, 255, 255, 0.512);
   border: 1px solid rgba(255, 255, 255, 0.512);
 }
-
+select>option {
+  background-color:  rgb(41, 41, 41) !important;
+  color: rgba(255, 255, 255, 0.822) !important;
+}
+select>option:hover {
+  background-color:  rgb(255, 0, 0) !important;
+  color: rgba(255, 255, 255, 0.822) !important;
+}
+.option{
+  background-color: red;
+  color:green;
+}
 .ButtonContainer {
   display: flex;
   justify-content: center;

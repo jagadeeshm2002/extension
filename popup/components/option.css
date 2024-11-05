@@ -6,8 +6,8 @@
   width: 360px;
   max-width: 360px;
   /* max-height: 50px; */
-  /* height: 100px; */
-  padding: 0 10px;
+  min-height: 50px;
+  padding: 5px 10px;
 
   box-sizing: border-box;
   cursor: default;
@@ -24,12 +24,21 @@
   border-bottom: none;
   width: 100%;
 }
-
+.OptionWrapperforButton{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  border-bottom: none;
+  width: 100%;
+}
 .iconContainer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width: 50px;
+  min-width: 50px;
 }
 .icon {
   width: 36px;
@@ -56,8 +65,16 @@ p {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding: 10px 0;
+
   margin-left: 5px;
+}
+.optionTitleHead {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+  font-family: cursive;
 }
 
 .optionTitle p {
@@ -65,6 +82,7 @@ p {
   font-weight: 600;
   padding: 0;
   margin: 0;
+  line-height: normal;
 }
 .optionDescription p {
   font-size: 10px;
@@ -72,6 +90,6 @@ p {
   text-indent: 5px;
   margin-top: 2px;
   color: rgb(177, 177, 177);
-  font-family: sans-serif;
-  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
